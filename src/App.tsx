@@ -1,10 +1,12 @@
-import './index.css';
-import './App.css';
+// Importing CSS files for additional styling
+import './index.css';  // Global CSS styles
+import './App.css';    // Local CSS for this component
 
+// Defining the main functional component for the App
 function App() {
-
   return (
     <>
+      {/* Inline styles for the entire page using template literals */}
       <style>
         {`
           body {
@@ -60,20 +62,28 @@ function App() {
           }
         `}
       </style>
+
+      {/* Defining the header section */}
       <header>
         <h1>Welcome to iCampus</h1>
       </header>
+
+      {/* Navigation bar */}
       <nav>
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact Us</a>
       </nav>
+
+      {/* Main content area */}
       <div className="main-content">
         <h1>Your Digital Campus Assistant</h1>
         <p>
           iCampus is an AI-powered platform that streamlines university workflows, providing assistance with exams, grant management, offer letters, and more. Let iCampus handle the administrative tasks, so you can focus on what matters most!
         </p>
       </div>
+
+      {/* Footer section */}
       <footer>
         <p>&copy; 2024 iCampus | All Rights Reserved</p>
       </footer>
