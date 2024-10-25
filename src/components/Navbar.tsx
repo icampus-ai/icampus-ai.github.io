@@ -31,7 +31,7 @@ const AuthButtons = () => (
   </div>
 );
 
-const MobileDrawer = ({ isOpen, items, toggle }: { isOpen: boolean; items: { href: string; label: string }[]; toggle: () => void }) => (
+const MobileDrawer = ({ isOpen, items }: { isOpen: boolean; items: { href: string; label: string }[] }) => (
   isOpen ? (
     <div className="fixed right-0 z-20 bg-neutral-900 w-full p-12 flex flex-col justify-center items-center lg:hidden">
       <ul>
@@ -73,7 +73,7 @@ const Navbar = () => {
             </button>
           </div>
         </div>
-        <MobileDrawer isOpen={mobileDrawerOpen} items={navItems} toggle={toggleNavbar} />
+        <MobileDrawer isOpen={mobileDrawerOpen} items={navItems} />
       </div>
     </nav>
   );
