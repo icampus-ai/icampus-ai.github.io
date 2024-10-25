@@ -1,94 +1,26 @@
-// Importing CSS files for additional styling
-import './index.css';  // Global CSS styles
-import './App.css';    // Local CSS for this component
+import React from "react";
+import Navbar from "./components/Navbar";
+import HeroSection from "./components/HeroSection";
+import FeatureSection from "./components/FeatureSection";
+import Workflow  from "./components/Workflow";
+import Pricing from "./components/Pricing"
+import Testimonials from "./components/Testimonials";
+import Footer from "./components/Footer";
 
-// Defining the main functional component for the App
-function App() {
+const App = () => {
   return (
     <>
-      {/* Inline styles for the entire page using template literals */}
-      <style>
-        {`
-          body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f4f8;
-            color: #333;
-          }
-          header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 15px 0;
-            text-align: center;
-          }
-          nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-          }
-          nav a {
-            padding: 14px 20px;
-            text-decoration: none;
-            color: white;
-            text-align: center;
-            font-size: 18px;
-          }
-          nav a:hover {
-            background-color: #ddd;
-            color: black;
-          }
-          .main-content {
-            text-align: center;
-            padding: 50px 20px;
-          }
-          .main-content h1 {
-            font-size: 48px;
-            color: #333;
-          }
-          .main-content p {
-            font-size: 18px;
-            margin-top: 20px;
-            line-height: 1.6;
-          }
-          footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-          }
-        `}
-      </style>
-
-      {/* Defining the header section */}
-      <header>
-        <h1>Welcome to iCampus</h1>
-      </header>
-
-      {/* Navigation bar */}
-      <nav>
-        <a href="#about">About</a>
-        <a href="#services">Services</a>
-        <a href="#contact">Contact Us</a>
-      </nav>
-
-      {/* Main content area */}
-      <div className="main-content">
-        <h1>Your Digital Campus Assistant</h1>
-        <p>
-          iCampus is an AI-powered platform that streamlines university workflows, providing assistance with exams, grant management, offer letters, and more. Let iCampus handle the administrative tasks, so you can focus on what matters most!
-        </p>
+      <Navbar />
+      <div className="max-w-7xl mx-auto pt-20 px-6">
+      <HeroSection />
+      <FeatureSection />
+      <Workflow />
+      <Pricing />
+      <Testimonials />
+      <Footer />
       </div>
-
-      {/* Footer section */}
-      <footer>
-        <p>&copy; 2024 iCampus | All Rights Reserved</p>
-      </footer>
     </>
   );
-}
+};
 
 export default App;
