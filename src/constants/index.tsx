@@ -1,9 +1,4 @@
-import { BotMessageSquare } from "lucide-react";
-import { BatteryCharging } from "lucide-react";
-import { Fingerprint } from "lucide-react";
-import { ShieldHalf } from "lucide-react";
-import { PlugZap } from "lucide-react";
-import { GlobeLock } from "lucide-react";
+import { BotMessageSquare, BatteryCharging, Fingerprint, ShieldHalf, PlugZap, GlobeLock } from "lucide-react";
 
 import user1 from "../assets/profile-pictures/user1.jpg";
 import user2 from "../assets/profile-pictures/user2.jpg";
@@ -73,7 +68,7 @@ export const features = [
   },
   {
     icon: <ShieldHalf />,
-    text: "NLP Based Interactive and Custamizable Avatar",
+    text: "NLP Based Interactive and Customizable Avatar",
     description:
       "Offers personalized assistance, enabling natural conversations and tailored experiences for users across various university workflows.",
   },
@@ -85,7 +80,7 @@ export const features = [
   },
   {
     icon: <PlugZap />,
-    text: "Faculty Collaboration ",
+    text: "Faculty Collaboration",
     description:
       "Faculty collaboration tools enable seamless teamwork on grants, research projects, and academic initiatives, fostering efficient communication and joint success.",
   },
@@ -145,7 +140,7 @@ export const pricingOptions = [
     title: "Enterprise",
     price: "$40",
     features: [
-      "Multiple AI Agenta",
+      "Multiple AI Agents",
       "Unlimited Evaluation",
       "High Performance Analytics",
       "Private Mode",
